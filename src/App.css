@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.gallery {
+  background: linear-gradient(to right, white, black);
+}
+
+.heights-img {
+  padding: 0.5rem;
+}
+
+.grid-wrapper {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-content: center;
+}
+
+.box>img {
+  width: 100%;
+}
+
+.box {
+  margin: 20px;
+}
